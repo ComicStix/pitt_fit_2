@@ -1,0 +1,27 @@
+<% provide(:title, 'Request a Workout Partner') %>
+<h1>Request</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+<%= form_for(@request) do |f| %>
+  <div class="field">
+  	<%= f.label :gender, 'Gender' %>
+    <%= f.text_area :gender %>
+  </div>
+  <div class="field">
+  	<%= f.label :level, 'Fitness Level' %>
+    <%= f.text_area :level, placeholder: "Beginner, Intermediate, Advanced, etc." %>
+  </div>
+  <div class="field">
+  	<%= f.label :time_available, 'Exercise Availability' %>
+    <%= f.text_area :time_available, placeholder: "Morning, Afternoon, Night, After 5 P.M, etc." %>
+  </div>
+  <div class="field">
+    <%= f.label :nickname, 'Please provide a nickname' %>
+    <%= f.text_area :nickname, placeholder: "This will be used to help us help you connect with a Pitt Fit Pal" %>
+  </div>
+
+  <%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>
+</div>
+</div>

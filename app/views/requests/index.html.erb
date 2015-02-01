@@ -1,0 +1,16 @@
+<% provide(:title, "Open Requests") %>
+<table class="table table-hover">
+  <th>Gender</th>
+  <th>Level</th>
+  <th>Time Available: </th>
+  <th>Creator Alias</th>
+  <% @requests.each do |request| %>
+  <tr>
+    <td><%= request.gender %></td>
+    <td><%= request.level %></td>
+    <td><%= request.time_available %></td>
+    <td><%= request.nickname %></td>
+    <td><%= button_to "I want to exercise with you!", {:controller => "mail", :action => "send_email", :user => request.id} , class: "btn btn-primary" %></td>
+  </tr>
+  <% end %>
+  </table>

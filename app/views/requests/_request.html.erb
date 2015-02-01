@@ -1,0 +1,9 @@
+<li id="request-<%= request.id %>">
+  <span class="gender"><%= request.content %></span>
+  <span class="level"><%= request.level %></span>
+  <span class="time"><%= request.time %></span>
+  <span class="nickname"><%= request.nickname %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(request.created_at) %> ago.
+  </span>
+</li>
