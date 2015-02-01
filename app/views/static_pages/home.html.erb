@@ -1,13 +1,10 @@
-
 <div class="center jumbotron">
-  <h1>Welcome to PittFit</h1>
+    
+  <div class=title><h1>Welcome to </h1> <%= link_to image_tag("pitt_fit.png", height: "100", alt: "Pitt Fit logo") %></div>
 
-  <h2>
-    Enter text here.
-  </h2>
+    <intro>
+    <br>PittFit is a web application that gives Pitt students the ability to find a fitness pal to get fit with! Going to the gym alone can be intimidating, but with a pal, working out can be a blast! Having a PittFit Pal will motivate you to go to the gym regularly. Add your skill level, gender, and time availability to find your fitness match. 
+  </intro>  
 
-  <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
+<%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-lg btn-primary" %>
 </div>
-
-<%= link_to image_tag("rails.png", alt: "Pitt Fit logo"),
-            'http://rubyonrails.org/' %>

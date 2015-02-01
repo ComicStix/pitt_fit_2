@@ -19,6 +19,7 @@ html {
 
 body{
 	padding-top: 60px;
+    background: #003263;
 }
 
 section{
@@ -31,9 +32,23 @@ textarea{
 
 .center{
 	text-align: center;
+    color: #000;
+    background: #9cb0ba;
 	h1 {
 		margin-bottom: 10px;
 	}
+}
+
+.title {
+  background: #c8bd7b;
+  -moz-box-shadow: 3px 4px 5px rgba(0,0,0,.5);
+  -webkit-box-shadow: 3px 4px 5px rgba(0,0,0,.5);
+  box-shadow: 3px 4px 5px rgba(0,0,0,.5);
+  h1 {
+    font-size: 90px;
+    font-family: sans-serif;
+    color: #fff;
+  }
 }
 
 /* typography */
@@ -46,15 +61,30 @@ h1{
 	letter-spacing: -2px;
 	margin-bottom: 30px;
 	text-align: center;
+    color: #fff;
 }
 
 h2 {
-	font-size: 1.2em;
+	font-size: 4em;
 	letter-spacing: -1px;
-	margin-bottom: 30px;
-	text-align: center;
-	font-weight: normal;
+    margin-left:15%;
+    margin-right:15%;
+	text-align: center justify;
+	font-weight: bold;
 	color: $gray-light;
+    font-family: sans-serif;
+}
+
+intro {
+    font-size: 1.5em;
+    color: #fff;
+	letter-spacing: -1px;
+    margin-left:15%;
+    margin-right:15%;
+	margin-bottom: 30px;
+	display: inline-block;
+	color: $gray-light;
+    font-family: sans-serif;
 }
 
 p{
